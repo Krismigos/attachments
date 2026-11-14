@@ -13,10 +13,10 @@ body {
 
 /* Общий контейнер для центрирования контента */
 .container {
+  display: flex;
+  flex-direction: column;
   max-width: 1120px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
 }
 
 /* Первый слайд (Welcome) */
@@ -52,6 +52,11 @@ body {
   color: #030303;
 }
 
+.line {
+  border: 1.5px solid #1C98D0;
+  width: 100%;
+}
+
 /* Общие стили для секций */
 .site-slide {
   padding: 80px 0;
@@ -64,6 +69,7 @@ body {
   align-items: center;
   gap: 30px;
   margin-bottom: 40px;
+  padding-left: 60px;
 }
 
 .site-num {
@@ -73,16 +79,10 @@ body {
   text-transform: uppercase;
 }
 
-
-.line {
-  flex-grow: 1;
-  height: 1px;
-  background-color: #05abf8;
-}
-
 /* Заголовки и категории внутри секций */
 .slide-header {
   margin-bottom: 50px;
+  padding-left: 60px;
 }
 
 .name-title {
@@ -125,7 +125,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* Автор цитаты */
+
 .author-block {
   display: flex;
   align-items: center;
@@ -157,12 +157,21 @@ body {
 
 
 .slide-footer-text {
-  font-size: 18px;
-  line-height: 160%;
+  margin-left: 90px;
   color: #444444;
-  max-width: 900px;
   border-left: 2px solid #1C98D0;
   padding-left: 24px;
+  height: 175px;
+  width: 975px;
+
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 27px;
+  line-height: 130%;
+  letter-spacing: 0%;
+
+
 }
 
 
@@ -174,11 +183,11 @@ body {
 
 .service-info {
   display: flex;
+  gap: 60px;
   background-color: white;
-  align-items: center;
   padding: 60px;
   border-radius: 25px;
-  gap: 60px;
+
 }
 
 .card-num {
@@ -217,4 +226,162 @@ body {
   line-height: 130%;
   letter-spacing: 0%;
 
+}
+
+/* card 3 */
+.card-info {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 27px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  padding-left: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-after-title {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 27px;
+
+  line-height: 130%;
+  letter-spacing: 0%;
+  padding-bottom: 50px;
+  padding-top: 60px;
+
+}
+
+.text-card-adaption {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 27px;
+  color: #030303;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin-left: 60px;
+  width: auto;
+
+}
+
+
+.img-section-three {
+  padding-bottom: 100px;
+}
+
+.info-text-line {
+
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 27px;
+  line-height: 130%;
+  letter-spacing: 0%;
+
+  width: 100%;
+  height: 105px;
+
+  padding-left: 60px;
+  border-left: 2px solid #1C98D0;
+}
+
+.info-section-three {
+  padding-top: 60px;
+}
+
+
+/* секция 4 */
+
+.text-card-four {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 27px;
+
+  line-height: 130%;
+  letter-spacing: 0%;
+
+  padding-top: 60px;
+  padding-left: 60px;
+
+}
+
+.img-section-four {
+  padding-bottom: 40px;
+  padding-top: 100px;
+
+}
+
+.section-four {
+  background-color: #F3F3F6;
+
+}
+
+.container-section-five-one {
+  display: flex;
+}
+
+
+/* section five */
+
+
+
+.container-section-five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.container-section-five-one,
+.container-section-five-two,
+.container-section-five-three {
+  display: flex;
+  gap: 60px;
+  padding: 60 60;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+
+  padding-top: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.card-text {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 36px;
+  line-height: 105%;
+  letter-spacing: 0%;
+
+}
+
+.container-section-five-two {
+  border-top: 1.5px solid #1C98D0;
+  border-bottom: 1.5px solid #1C98D0;
+
+}
+
+
+.card-num-text {
+  padding: 20px;
+}
+
+.container-section-five-one {
+  padding-bottom: 20px;
+}
+
+.container-section-five-three {
+  padding-top: 20px;
 }
