@@ -1,0 +1,220 @@
+/* Базовый сброс стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #201F37;
+  background-color: #f4f7f9;
+}
+
+/* Общий контейнер для центрирования контента */
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Первый слайд (Welcome) */
+.welcome-slide {
+  background-image: url(./img/img1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome-container {
+  position: absolute;
+  bottom: 120px;
+  left: 128px;
+  max-width: 876px;
+}
+
+.welcome-slide h1 {
+  font-weight: 500;
+  font-size: 110px;
+  line-height: 130%;
+  color: #0a0a0a;
+  margin-bottom: 24px;
+}
+
+.main-site-text {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  color: #030303;
+}
+
+/* Общие стили для секций */
+.site-slide {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+/* Шапка секции (номер + линия) */
+.line-num {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.site-num {
+  font-weight: 600;
+  font-size: 24px;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #05abf8;
+}
+
+/* Заголовки и категории внутри секций */
+.slide-header {
+  margin-bottom: 50px;
+}
+
+.name-title {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #201F37;
+  border-radius: 1000px;
+  padding: 8px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.slide-header h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  max-width: 900px;
+}
+
+.quote-card {
+  background-color: #eaf2fa;
+  border-radius: 24px;
+  padding: 60px;
+  margin-bottom: 40px;
+}
+
+.quote-icon {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1C98D0;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.quote-text {
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+/* Автор цитаты */
+.author-block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.author-info {
+  text-align: right;
+}
+
+.author-name {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.author-role {
+  font-size: 14px;
+  color: #666666;
+}
+
+.author-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.slide-footer-text {
+  font-size: 18px;
+  line-height: 160%;
+  color: #444444;
+  max-width: 900px;
+  border-left: 2px solid #1C98D0;
+  padding-left: 24px;
+}
+
+
+/* Вторая секция */
+
+.section-two {
+  background-color: #D9E5F4;
+}
+
+.service-info {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 60px;
+  border-radius: 25px;
+  gap: 60px;
+}
+
+.card-num {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #1C98D0;
+}
+
+.card-one,
+.card-two {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.info-name {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 36px;
+  line-height: 105%;
+  letter-spacing: 0%;
+}
+
+.info-text {
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+
+  line-height: 130%;
+  letter-spacing: 0%;
+
+}
