@@ -1,4 +1,3 @@
-/* Базовый сброс стилей */
 * {
   margin: 0;
   padding: 0;
@@ -11,12 +10,12 @@ body {
   background-color: #f4f7f9;
 }
 
-/* Общий контейнер для центрирования контента */
 .container {
   display: flex;
   flex-direction: column;
   max-width: 1120px;
   margin: auto;
+  padding: 0;
 }
 
 /* Первый слайд (Welcome) */
@@ -57,13 +56,11 @@ body {
   width: 100%;
 }
 
-/* Общие стили для секций */
 .site-slide {
   padding: 80px 0;
   background-color: #ffffff;
 }
 
-/* Шапка секции (номер + линия) */
 .line-num {
   display: flex;
   align-items: center;
@@ -79,7 +76,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Заголовки и категории внутри секций */
 .slide-header {
   margin-bottom: 50px;
   padding-left: 60px;
@@ -125,7 +121,6 @@ body {
   margin-bottom: 40px;
 }
 
-
 .author-block {
   display: flex;
   align-items: center;
@@ -155,28 +150,18 @@ body {
   object-fit: cover;
 }
 
-
 .slide-footer-text {
   margin-left: 90px;
   color: #444444;
   border-left: 2px solid #1C98D0;
   padding-left: 24px;
-  height: 175px;
-  width: 975px;
-
-  font-family: Raleway;
+  max-width: 975px;
   font-weight: 500;
-  font-style: Medium;
   font-size: 27px;
   line-height: 130%;
-  letter-spacing: 0%;
-
-
 }
 
-
 /* Вторая секция */
-
 .section-two {
   background-color: #D9E5F4;
 }
@@ -187,103 +172,62 @@ body {
   background-color: white;
   padding: 60px;
   border-radius: 25px;
-
 }
 
 .card-num {
-  font-family: Raleway;
   font-weight: 500;
-  font-style: Medium;
   font-size: 18px;
   line-height: 130%;
-  letter-spacing: 0%;
   color: #1C98D0;
 }
 
 .card-one,
 .card-two {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
   gap: 30px;
 }
 
 .info-name {
-  font-family: Raleway;
   font-weight: 500;
-  font-style: Medium;
   font-size: 36px;
   line-height: 105%;
-  letter-spacing: 0%;
 }
 
 .info-text {
-  font-family: Raleway;
   font-weight: 500;
-  font-style: Medium;
   font-size: 24px;
-
   line-height: 130%;
-  letter-spacing: 0%;
-
 }
 
-/* card 3 */
+/* card 3 / Секция 3 */
 .card-info {
-  font-family: Raleway;
   font-weight: 500;
-  font-style: Medium;
   font-size: 27px;
   line-height: 130%;
-  letter-spacing: 0%;
   padding-left: 60px;
   display: flex;
   flex-direction: column;
 }
 
 .text-after-title {
-  font-family: Raleway;
   font-weight: 500;
-  font-style: Medium;
   font-size: 27px;
-
   line-height: 130%;
-  letter-spacing: 0%;
   padding-bottom: 50px;
   padding-top: 60px;
-
 }
-
-.text-card-adaption {
-  font-family: Raleway;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 27px;
-  color: #030303;
-  line-height: 130%;
-  letter-spacing: 0%;
-  margin-left: 60px;
-  width: auto;
-
-}
-
 
 .img-section-three {
   padding-bottom: 100px;
 }
 
 .info-text-line {
-
-  font-family: Raleway;
   font-weight: 500;
-  font-style: Medium;
   font-size: 27px;
   line-height: 130%;
-  letter-spacing: 0%;
-
   width: 100%;
-  height: 105px;
-
   padding-left: 60px;
   border-left: 2px solid #1C98D0;
 }
@@ -292,43 +236,25 @@ body {
   padding-top: 60px;
 }
 
-
 /* секция 4 */
-
 .text-card-four {
-  font-family: Raleway;
   font-weight: 500;
-  font-style: Medium;
   font-size: 27px;
-
   line-height: 130%;
-  letter-spacing: 0%;
-
   padding-top: 60px;
   padding-left: 60px;
-
 }
 
 .img-section-four {
   padding-bottom: 40px;
   padding-top: 100px;
-
 }
 
 .section-four {
   background-color: #F3F3F6;
-
 }
-
-.container-section-five-one {
-  display: flex;
-}
-
 
 /* section five */
-
-
-
 .container-section-five {
   display: flex;
   justify-content: center;
@@ -344,44 +270,132 @@ body {
 .container-section-five-three {
   display: flex;
   gap: 60px;
-  padding: 60 60;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: Raleway;
+  padding: 40px 60px; /* Виправлено синтаксис */
   font-weight: 500;
-  font-style: Medium;
   font-size: 24px;
-
-  padding-top: 20px;
   line-height: 130%;
-  letter-spacing: 0%;
-}
-
-.card-text {
-  font-family: Raleway;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 36px;
-  line-height: 105%;
-  letter-spacing: 0%;
-
+  width: 100%;
 }
 
 .container-section-five-two {
   border-top: 1.5px solid #1C98D0;
   border-bottom: 1.5px solid #1C98D0;
-
 }
-
 
 .card-num-text {
-  padding: 20px;
+  padding: 20px 0;
 }
 
-.container-section-five-one {
-  padding-bottom: 20px;
+/* секция 6 */
+.section-six {
+  background-color: #C2D5EE;
 }
 
-.container-section-five-three {
-  padding-top: 20px;
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card {
+  width: 470px;
+}
+
+.card-text {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.price {
+  font-weight: 400;
+  font-size: 110px;
+}
+
+.price-info {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+}
+
+.price-text {
+  padding-top: 30px;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 130%;
+}
+
+.section-text-one {
+  padding-top: 60px;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 130%;
+  color: #2A2C36;
+}
+
+.section-text-two {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+}
+
+.section-seven-text {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 130%;
+  padding: 100px 60px;
+}
+
+.section-seven {
+  background-color: #D9E5F4;
+}
+
+.text-section-seven {
+  padding-left: 60px;
+  padding-bottom: 100px;
+}
+
+.section-seven-info {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: #D9E5F4;
+  border-radius: 35px;
+  padding: 60px;
+}
+
+.span-text-section-seven {
+  align-self: flex-start;
+  padding-left: 60px;
+  margin-left: 60px;
+}
+
+.section-info-title {
+  font-weight: 500;
+  font-size: 80px;
+  padding-left: 60px;
+  line-height: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #030303;
+  color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.disigner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  gap: 15px;
 }
