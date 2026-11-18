@@ -6,8 +6,9 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  color: #201F37;
   background-color: #f4f7f9;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: "lnum", "tnum";
 }
 
 .container {
@@ -18,6 +19,24 @@ body {
   padding: 0;
 }
 
+.title-first-section {
+
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 44px;
+  letter-spacing: 0%;
+
+}
+
+
+.title-section {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
 /* Первый слайд (Welcome) */
 .welcome-slide {
   background-image: url(./img/img1.png);
@@ -26,7 +45,7 @@ body {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100svh
 }
 
 .welcome-container {
@@ -65,19 +84,21 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   padding-left: 60px;
 }
 
 .site-num {
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 24px;
+  letter-spacing: 0%;
   color: #888888;
-  text-transform: uppercase;
+  line-height: 1;
 }
 
 .slide-header {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   padding-left: 60px;
 }
 
@@ -93,31 +114,26 @@ body {
   margin-bottom: 24px;
 }
 
-.slide-header h2 {
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 130%;
-  max-width: 900px;
-}
-
 .quote-card {
   background-color: #eaf2fa;
   border-radius: 24px;
-  padding: 60px;
-  margin-bottom: 40px;
+  padding: 60px 60px 0 60px;
+  margin-bottom: 60px;
 }
 
 .quote-icon {
-  font-size: 48px;
-  font-weight: 700;
-  color: #1C98D0;
-  line-height: 1;
-  margin-bottom: 24px;
+
+  text-align: left;
+  padding-bottom: 30px;
 }
 
 .quote-text {
+
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #101111;
   font-size: 24px;
-  line-height: 150%;
+
   margin-bottom: 40px;
 }
 
@@ -125,6 +141,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  padding-bottom: 60px;
   gap: 20px;
 }
 
@@ -133,14 +150,14 @@ body {
 }
 
 .author-name {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 24px;
   margin-bottom: 4px;
 }
 
 .author-role {
   font-size: 14px;
-  color: #666666;
+  color: #888888;
+
 }
 
 .author-photo {
@@ -152,7 +169,7 @@ body {
 
 .slide-footer-text {
   margin-left: 90px;
-  color: #444444;
+  color: #101111;
   border-left: 2px solid #1C98D0;
   padding-left: 24px;
   max-width: 975px;
@@ -217,6 +234,7 @@ body {
   line-height: 130%;
   padding-bottom: 50px;
   padding-top: 60px;
+  color: #2A2C36;
 }
 
 .img-section-three {
@@ -270,7 +288,7 @@ body {
 .container-section-five-three {
   display: flex;
   gap: 60px;
-  padding: 40px 60px; 
+  padding: 40px 60px;
   font-weight: 500;
   font-size: 24px;
   line-height: 130%;
@@ -286,31 +304,53 @@ body {
   padding: 20px 0;
 }
 
+.conteiner-section-five-group-title {
+
+  font-weight: 500;
+
+  font-size: 36px;
+
+  line-height: 105%;
+  letter-spacing: 0%;
+
+}
+
 /* секция 6 */
 .section-six {
   background-color: #C2D5EE;
 }
 
+
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 48px;
+  max-width: 960px;
+  padding-left: 60px;
 }
 
 .card {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
   width: 470px;
 }
 
 .card-text {
   display: flex;
-  align-items: flex-end;
-  gap: 20px;
+  align-items: baseline;
+  gap: 30px;
 }
 
 .price {
+
   font-weight: 400;
   font-size: 110px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+
 }
 
 .price-info {
@@ -320,29 +360,42 @@ body {
 }
 
 .price-text {
-  padding-top: 30px;
+
   font-weight: 500;
+  font-style: Medium;
   font-size: 27px;
+
   line-height: 130%;
+  letter-spacing: 0%;
+
+
 }
 
 .section-text-one {
   padding-top: 60px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 27px;
-  line-height: 130%;
   color: #2A2C36;
 }
 
 .section-text-two {
   padding-bottom: 60px;
   padding-top: 60px;
-  font-weight: 500;
-  font-size: 36px;
+
   line-height: 130%;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 36px;
+
+  line-height: 130%;
+  letter-spacing: 0%;
+
+
+
 }
 
 .section-seven-text {
+
   font-weight: 500;
   font-size: 40px;
   line-height: 130%;
